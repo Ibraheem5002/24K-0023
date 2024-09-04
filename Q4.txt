@@ -1,0 +1,27 @@
+Start
+
+    // taking input 
+
+    Print "input your average fuel intake per km"
+    Repeat
+    // validation
+
+        Input AVG
+        If AVG < 0
+            Then Print "invalid input"
+    Until AVG >= 0
+
+    // processing
+
+    Fuel = AVG * 1270
+    FuelTotal = Fuel * 2
+    Price1 = Fuel * 118
+    Price2 = Fuel * 123
+    PriceTotal = Price1 + Price2
+
+    // outputing the results
+
+    Print "your total fuel consumption is:" FuelTotal
+    Print "\n your total fuel price is: " PriceTotal
+
+End 
