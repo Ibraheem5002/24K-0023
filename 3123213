@@ -1,0 +1,73 @@
+#include <stdio.h>
+    int main ()
+{
+    int Num1;
+    int Num2;
+    int Num3;
+    int Great;
+    int Mid;
+    int Small;
+
+    printf("Input your number: ");
+    scanf("%d", &Num1);
+    printf("Input your number: ");
+    scanf("%d", &Num2);
+    printf("Input your number: ");
+    scanf("%d", &Num3);
+
+    if (Num1 > Num2 && Num1 > Num3)
+    {
+        Great = Num1;
+
+        if (Num2 > Num3)
+        {
+            Mid = Num2;
+            Small = Num3;
+        } // end if
+        
+        else
+        {
+            Mid = Num3;
+            Small = Num2;
+        } // end else
+    } // end if
+    
+    else if (Num2 > Num1 && Num2 > Num3)
+    {
+        Great = Num2;
+
+        if (Num1 > Num3)
+        {
+            Mid = Num1;
+            Small = Num3;
+        } // end if
+        
+        else
+        {
+            Mid = Num3;
+            Small = Num1;
+        } // end else
+    } // end if
+
+    else if (Num3 > Num2 && Num3 > Num1)
+    {
+        Great = Num3;
+
+        if (Num2 > Num1)
+        {
+            Mid = Num2;
+            Small = Num1;
+        } // end if
+        
+        else
+        {
+            Mid = Num1;
+            Small = Num2;
+        } // end else
+    } // end if
+
+    printf ("greatest: %d, mid: %d, smallest: %d \n", Great, Mid, Small);
+
+    return 0;
+
+} // end main
